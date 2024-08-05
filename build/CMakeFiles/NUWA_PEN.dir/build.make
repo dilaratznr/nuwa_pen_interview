@@ -69,10 +69,19 @@ include CMakeFiles/NUWA_PEN.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/NUWA_PEN.dir/flags.make
 
+include/moc_mainwindow.cpp: /Users/dilaratuzuner/Desktop/NUWA_PEN/include/mainwindow.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating include/moc_mainwindow.cpp"
+	cd /Users/dilaratuzuner/Desktop/NUWA_PEN/build/include && /usr/local/Cellar/qt/6.7.0_1/share/qt/libexec/moc @/Users/dilaratuzuner/Desktop/NUWA_PEN/build/include/moc_mainwindow.cpp_parameters
+
+ui_mainwindow.h: /Users/dilaratuzuner/Desktop/NUWA_PEN/src/mainwindow.ui
+ui_mainwindow.h: /usr/local/Cellar/qt/6.7.0_1/share/qt/libexec/uic
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --blue --bold --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating ui_mainwindow.h"
+	/usr/local/Cellar/qt/6.7.0_1/share/qt/libexec/uic -o /Users/dilaratuzuner/Desktop/NUWA_PEN/build/ui_mainwindow.h /Users/dilaratuzuner/Desktop/NUWA_PEN/src/mainwindow.ui
+
 CMakeFiles/NUWA_PEN.dir/src/main.cpp.o: CMakeFiles/NUWA_PEN.dir/flags.make
 CMakeFiles/NUWA_PEN.dir/src/main.cpp.o: /Users/dilaratuzuner/Desktop/NUWA_PEN/src/main.cpp
 CMakeFiles/NUWA_PEN.dir/src/main.cpp.o: CMakeFiles/NUWA_PEN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/NUWA_PEN.dir/src/main.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NUWA_PEN.dir/src/main.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NUWA_PEN.dir/src/main.cpp.o -MF CMakeFiles/NUWA_PEN.dir/src/main.cpp.o.d -o CMakeFiles/NUWA_PEN.dir/src/main.cpp.o -c /Users/dilaratuzuner/Desktop/NUWA_PEN/src/main.cpp
 
 CMakeFiles/NUWA_PEN.dir/src/main.cpp.i: cmake_force
@@ -86,7 +95,7 @@ CMakeFiles/NUWA_PEN.dir/src/main.cpp.s: cmake_force
 CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.o: CMakeFiles/NUWA_PEN.dir/flags.make
 CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.o: /Users/dilaratuzuner/Desktop/NUWA_PEN/src/Compressor.cpp
 CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.o: CMakeFiles/NUWA_PEN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.o -MF CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.o.d -o CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.o -c /Users/dilaratuzuner/Desktop/NUWA_PEN/src/Compressor.cpp
 
 CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.i: cmake_force
@@ -100,7 +109,7 @@ CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.s: cmake_force
 CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.o: CMakeFiles/NUWA_PEN.dir/flags.make
 CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.o: /Users/dilaratuzuner/Desktop/NUWA_PEN/src/ImageProcessor.cpp
 CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.o: CMakeFiles/NUWA_PEN.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.o -MF CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.o.d -o CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.o -c /Users/dilaratuzuner/Desktop/NUWA_PEN/src/ImageProcessor.cpp
 
 CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.i: cmake_force
@@ -111,11 +120,41 @@ CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dilaratuzuner/Desktop/NUWA_PEN/src/ImageProcessor.cpp -o CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.s
 
+CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o: CMakeFiles/NUWA_PEN.dir/flags.make
+CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o: /Users/dilaratuzuner/Desktop/NUWA_PEN/src/mainwindow.cpp
+CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o: CMakeFiles/NUWA_PEN.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o -MF CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o.d -o CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o -c /Users/dilaratuzuner/Desktop/NUWA_PEN/src/mainwindow.cpp
+
+CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dilaratuzuner/Desktop/NUWA_PEN/src/mainwindow.cpp > CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.i
+
+CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dilaratuzuner/Desktop/NUWA_PEN/src/mainwindow.cpp -o CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.s
+
+CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.o: CMakeFiles/NUWA_PEN.dir/flags.make
+CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.o: include/moc_mainwindow.cpp
+CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.o: CMakeFiles/NUWA_PEN.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.o -MF CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.o.d -o CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.o -c /Users/dilaratuzuner/Desktop/NUWA_PEN/build/include/moc_mainwindow.cpp
+
+CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/dilaratuzuner/Desktop/NUWA_PEN/build/include/moc_mainwindow.cpp > CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.i
+
+CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/dilaratuzuner/Desktop/NUWA_PEN/build/include/moc_mainwindow.cpp -o CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.s
+
 # Object files for target NUWA_PEN
 NUWA_PEN_OBJECTS = \
 "CMakeFiles/NUWA_PEN.dir/src/main.cpp.o" \
 "CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.o" \
-"CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.o"
+"CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.o" \
+"CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o" \
+"CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.o"
 
 # External object files for target NUWA_PEN
 NUWA_PEN_EXTERNAL_OBJECTS =
@@ -123,7 +162,10 @@ NUWA_PEN_EXTERNAL_OBJECTS =
 NUWA_PEN: CMakeFiles/NUWA_PEN.dir/src/main.cpp.o
 NUWA_PEN: CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.o
 NUWA_PEN: CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.o
+NUWA_PEN: CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o
+NUWA_PEN: CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.o
 NUWA_PEN: CMakeFiles/NUWA_PEN.dir/build.make
+NUWA_PEN: /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Versions/A/QtWidgets
 NUWA_PEN: /usr/local/Cellar/opencv/4.10.0_2/lib/libopencv_gapi.4.10.0.dylib
 NUWA_PEN: /usr/local/Cellar/opencv/4.10.0_2/lib/libopencv_stitching.4.10.0.dylib
 NUWA_PEN: /usr/local/Cellar/opencv/4.10.0_2/lib/libopencv_alphamat.4.10.0.dylib
@@ -160,6 +202,8 @@ NUWA_PEN: /usr/local/Cellar/opencv/4.10.0_2/lib/libopencv_wechat_qrcode.4.10.0.d
 NUWA_PEN: /usr/local/Cellar/opencv/4.10.0_2/lib/libopencv_xfeatures2d.4.10.0.dylib
 NUWA_PEN: /usr/local/Cellar/opencv/4.10.0_2/lib/libopencv_xobjdetect.4.10.0.dylib
 NUWA_PEN: /usr/local/Cellar/opencv/4.10.0_2/lib/libopencv_xphoto.4.10.0.dylib
+NUWA_PEN: /usr/local/Cellar/qt/6.7.0_1/lib/QtGui.framework/Versions/A/QtGui
+NUWA_PEN: /usr/local/Cellar/qt/6.7.0_1/lib/QtCore.framework/Versions/A/QtCore
 NUWA_PEN: /usr/local/Cellar/opencv/4.10.0_2/lib/libopencv_shape.4.10.0.dylib
 NUWA_PEN: /usr/local/Cellar/opencv/4.10.0_2/lib/libopencv_highgui.4.10.0.dylib
 NUWA_PEN: /usr/local/Cellar/opencv/4.10.0_2/lib/libopencv_datasets.4.10.0.dylib
@@ -181,7 +225,7 @@ NUWA_PEN: /usr/local/Cellar/opencv/4.10.0_2/lib/libopencv_photo.4.10.0.dylib
 NUWA_PEN: /usr/local/Cellar/opencv/4.10.0_2/lib/libopencv_imgproc.4.10.0.dylib
 NUWA_PEN: /usr/local/Cellar/opencv/4.10.0_2/lib/libopencv_core.4.10.0.dylib
 NUWA_PEN: CMakeFiles/NUWA_PEN.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable NUWA_PEN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Linking CXX executable NUWA_PEN"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NUWA_PEN.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -192,7 +236,8 @@ CMakeFiles/NUWA_PEN.dir/clean:
 	$(CMAKE_COMMAND) -P CMakeFiles/NUWA_PEN.dir/cmake_clean.cmake
 .PHONY : CMakeFiles/NUWA_PEN.dir/clean
 
-CMakeFiles/NUWA_PEN.dir/depend:
+CMakeFiles/NUWA_PEN.dir/depend: include/moc_mainwindow.cpp
+CMakeFiles/NUWA_PEN.dir/depend: ui_mainwindow.h
 	cd /Users/dilaratuzuner/Desktop/NUWA_PEN/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/dilaratuzuner/Desktop/NUWA_PEN /Users/dilaratuzuner/Desktop/NUWA_PEN /Users/dilaratuzuner/Desktop/NUWA_PEN/build /Users/dilaratuzuner/Desktop/NUWA_PEN/build /Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles/NUWA_PEN.dir/DependInfo.cmake "--color=$(COLOR)"
 .PHONY : CMakeFiles/NUWA_PEN.dir/depend
 

@@ -1,0 +1,5 @@
+-I/Users/dilaratuzuner/Desktop/NUWA_PEN/include
+-I/Users/dilaratuzuner/Desktop/NUWA_PEN/build
+-o
+/Users/dilaratuzuner/Desktop/NUWA_PEN/build/include/moc_mainwindow.cpp
+/Users/dilaratuzuner/Desktop/NUWA_PEN/include/mainwindow.h

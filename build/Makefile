@@ -129,6 +129,30 @@ NUWA_PEN/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NUWA_PEN.dir/build.make CMakeFiles/NUWA_PEN.dir/build
 .PHONY : NUWA_PEN/fast
 
+include/moc_mainwindow.o: include/moc_mainwindow.cpp.o
+.PHONY : include/moc_mainwindow.o
+
+# target to build an object file
+include/moc_mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NUWA_PEN.dir/build.make CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.o
+.PHONY : include/moc_mainwindow.cpp.o
+
+include/moc_mainwindow.i: include/moc_mainwindow.cpp.i
+.PHONY : include/moc_mainwindow.i
+
+# target to preprocess a source file
+include/moc_mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NUWA_PEN.dir/build.make CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.i
+.PHONY : include/moc_mainwindow.cpp.i
+
+include/moc_mainwindow.s: include/moc_mainwindow.cpp.s
+.PHONY : include/moc_mainwindow.s
+
+# target to generate assembly for a file
+include/moc_mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NUWA_PEN.dir/build.make CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.s
+.PHONY : include/moc_mainwindow.cpp.s
+
 src/Compressor.o: src/Compressor.cpp.o
 .PHONY : src/Compressor.o
 
@@ -201,6 +225,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NUWA_PEN.dir/build.make CMakeFiles/NUWA_PEN.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/mainwindow.o: src/mainwindow.cpp.o
+.PHONY : src/mainwindow.o
+
+# target to build an object file
+src/mainwindow.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NUWA_PEN.dir/build.make CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o
+.PHONY : src/mainwindow.cpp.o
+
+src/mainwindow.i: src/mainwindow.cpp.i
+.PHONY : src/mainwindow.i
+
+# target to preprocess a source file
+src/mainwindow.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NUWA_PEN.dir/build.make CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.i
+.PHONY : src/mainwindow.cpp.i
+
+src/mainwindow.s: src/mainwindow.cpp.s
+.PHONY : src/mainwindow.s
+
+# target to generate assembly for a file
+src/mainwindow.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NUWA_PEN.dir/build.make CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.s
+.PHONY : src/mainwindow.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -210,6 +258,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... NUWA_PEN"
+	@echo "... include/moc_mainwindow.o"
+	@echo "... include/moc_mainwindow.i"
+	@echo "... include/moc_mainwindow.s"
 	@echo "... src/Compressor.o"
 	@echo "... src/Compressor.i"
 	@echo "... src/Compressor.s"
@@ -219,6 +270,9 @@ help:
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/mainwindow.o"
+	@echo "... src/mainwindow.i"
+	@echo "... src/mainwindow.s"
 .PHONY : help
 
 
