@@ -1071,18 +1071,6 @@ CMakeFiles/NUWA_PEN.dir/src/main.cpp.o: \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qfontinfo.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qsizepolicy.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtabwidget.h \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QLabel \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qlabel.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qframe.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpicture.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiodevice.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtextdocument.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qurl.h \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtCore.framework/Headers/QString \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtCore.framework/Headers/qstring.h \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QPushButton \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qpushbutton.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qabstractbutton.h \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/opencv.hpp \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/opencv_modules.hpp \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/core.hpp \
@@ -1210,6 +1198,4 @@ CMakeFiles/NUWA_PEN.dir/src/main.cpp.o: \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/stitching/detail/blenders.hpp \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/video.hpp \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/video/tracking.hpp \
-  /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/video/background_segm.hpp \
-  /Users/dilaratuzuner/Desktop/NUWA_PEN/include/Compressor.h \
-  /Users/dilaratuzuner/Desktop/NUWA_PEN/include/ImageProcessor.h
+  /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/video/background_segm.hpp

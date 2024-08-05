@@ -36,13 +36,12 @@ namespace {
 struct qt_meta_stringdata_CLASSMainWindowENDCLASS_t {};
 constexpr auto qt_meta_stringdata_CLASSMainWindowENDCLASS = QtMocHelpers::stringData(
     "MainWindow",
-    "on_selectImageButton1_clicked",
+    "selectImage1",
     "",
-    "on_selectImageButton2_clicked",
-    "on_selectImageButton3_clicked",
-    "on_selectImageButton4_clicked",
-    "on_processButton_clicked",
-    "clearResults"
+    "selectImage2",
+    "selectImage3",
+    "selectImage4",
+    "processImages"
 );
 #else  // !QT_MOC_HAS_STRINGDATA
 #error "qtmochelpers.h not found or too old."
@@ -55,7 +54,7 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
       12,       // revision
        0,       // classname
        0,    0, // classinfo
-       6,   14, // methods
+       5,   14, // methods
        0,    0, // properties
        0,    0, // enums/sets
        0,    0, // constructors
@@ -63,15 +62,13 @@ Q_CONSTINIT static const uint qt_meta_data_CLASSMainWindowENDCLASS[] = {
        0,       // signalCount
 
  // slots: name, argc, parameters, tag, flags, initial metatype offsets
-       1,    0,   50,    2, 0x08,    1 /* Private */,
-       3,    0,   51,    2, 0x08,    2 /* Private */,
-       4,    0,   52,    2, 0x08,    3 /* Private */,
-       5,    0,   53,    2, 0x08,    4 /* Private */,
-       6,    0,   54,    2, 0x08,    5 /* Private */,
-       7,    0,   55,    2, 0x08,    6 /* Private */,
+       1,    0,   44,    2, 0x08,    1 /* Private */,
+       3,    0,   45,    2, 0x08,    2 /* Private */,
+       4,    0,   46,    2, 0x08,    3 /* Private */,
+       5,    0,   47,    2, 0x08,    4 /* Private */,
+       6,    0,   48,    2, 0x08,    5 /* Private */,
 
  // slots: parameters
-    QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
     QMetaType::Void,
@@ -90,17 +87,15 @@ Q_CONSTINIT const QMetaObject MainWindow::staticMetaObject = { {
     qt_incomplete_metaTypeArray<qt_meta_stringdata_CLASSMainWindowENDCLASS_t,
         // Q_OBJECT / Q_GADGET
         QtPrivate::TypeAndForceComplete<MainWindow, std::true_type>,
-        // method 'on_selectImageButton1_clicked'
+        // method 'selectImage1'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_selectImageButton2_clicked'
+        // method 'selectImage2'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_selectImageButton3_clicked'
+        // method 'selectImage3'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_selectImageButton4_clicked'
+        // method 'selectImage4'
         QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'on_processButton_clicked'
-        QtPrivate::TypeAndForceComplete<void, std::false_type>,
-        // method 'clearResults'
+        // method 'processImages'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
@@ -112,12 +107,11 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         auto *_t = static_cast<MainWindow *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_selectImageButton1_clicked(); break;
-        case 1: _t->on_selectImageButton2_clicked(); break;
-        case 2: _t->on_selectImageButton3_clicked(); break;
-        case 3: _t->on_selectImageButton4_clicked(); break;
-        case 4: _t->on_processButton_clicked(); break;
-        case 5: _t->clearResults(); break;
+        case 0: _t->selectImage1(); break;
+        case 1: _t->selectImage2(); break;
+        case 2: _t->selectImage3(); break;
+        case 3: _t->selectImage4(); break;
+        case 4: _t->processImages(); break;
         default: ;
         }
     }
@@ -143,13 +137,13 @@ int MainWindow::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
     if (_id < 0)
         return _id;
     if (_c == QMetaObject::InvokeMetaMethod) {
-        if (_id < 6)
+        if (_id < 5)
             qt_static_metacall(this, _c, _id, _a);
-        _id -= 6;
+        _id -= 5;
     } else if (_c == QMetaObject::RegisterMethodArgumentMetaType) {
-        if (_id < 6)
+        if (_id < 5)
             *reinterpret_cast<QMetaType *>(_a[0]) = QMetaType();
-        _id -= 6;
+        _id -= 5;
     }
     return _id;
 }
