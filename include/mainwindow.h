@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "ImageProcessor.h"
 #include "Compressor.h"
+#include <QLabel> // Bu satırı ekleyin
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -31,6 +32,7 @@ private:
     Compressor compressor;
 
     void loadImage(const QString &filePath);
+    void displayImage(const QString &filePath, QLabel *label);
 };
 
 #endif // MAINWINDOW_H

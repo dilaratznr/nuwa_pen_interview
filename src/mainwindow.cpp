@@ -30,6 +30,12 @@ void MainWindow::loadImage(const QString &filePath)
     selectedFilePath = filePath;
 }
 
+void MainWindow::displayImage(const QString &filePath, QLabel *label)
+{
+    QPixmap pixmap(filePath);
+    label->setPixmap(pixmap.scaled(label->size(), Qt::KeepAspectRatio));
+}
+
 void MainWindow::on_selectImageButton1_clicked()
 {
     loadImage("../images/Assignment1_1.jpg");
@@ -76,7 +82,12 @@ void MainWindow::on_processButton_clicked()
     duration = end - start;
     ui->outputTextEdit->append("Compression time: " + QString::number(duration.count()) + " seconds");
 
-    std::string compressedFilePath = "compressed.bin";
+    QString outputDir = "../outputs";
+    if (!QDir(outputDir).exists()) {
+        QDir().mkdir(outputDir);
+    }
+
+    std::string compressedFilePath = (outputDir + "/compressed.bin").toStdString();
     std::ofstream outFile(compressedFilePath, std::ios::binary);
     outFile.write(reinterpret_cast<const char*>(compressedData.data()), compressedData.size());
     outFile.close();
@@ -87,12 +98,15 @@ void MainWindow::on_processButton_clicked()
     duration = end - start;
     ui->outputTextEdit->append("Decompression time: " + QString::number(duration.count()) + " seconds");
 
-    std::string binaryImagePath = "binary_image.png";
-    std::string decompressedImagePath = "decompressed_image.png";
-    cv::imwrite(binaryImagePath, binaryImage);
-    cv::imwrite(decompressedImagePath, decompressedImage);
+    QString binaryImagePath = outputDir + "/binary_image.png";
+    QString decompressedImagePath = outputDir + "/decompressed_image.png";
+    cv::imwrite(binaryImagePath.toStdString(), binaryImage);
+    cv::imwrite(decompressedImagePath.toStdString(), decompressedImage);
 
     double mse = cv::norm(binaryImage, decompressedImage, cv::NORM_L2);
     mse = mse * mse / (binaryImage.total());
     ui->outputTextEdit->append("Mean Squared Error: " + QString::number(mse));
+
+    displayImage(binaryImagePath, ui->binaryImageLabel);
+    displayImage(decompressedImagePath, ui->decompressedImageLabel);
 }

@@ -6,12 +6,12 @@
             <rect>
                 <x>0</x>
                 <y>0</y>
-                <width>800</width>
-                <height>600</height>
+                <width>1000</width>
+                <height>800</height>
             </rect>
         </property>
         <property name="windowTitle">
-            <string>MainWindow</string>
+            <string>Image Processing</string>
         </property>
         <widget class="QWidget" name="centralwidget">
             <widget class="QPushButton" name="selectImageButton1">
@@ -19,7 +19,7 @@
                     <rect>
                         <x>20</x>
                         <y>20</y>
-                        <width>100</width>
+                        <width>150</width>
                         <height>50</height>
                     </rect>
                 </property>
@@ -32,7 +32,7 @@
                     <rect>
                         <x>20</x>
                         <y>80</y>
-                        <width>100</width>
+                        <width>150</width>
                         <height>50</height>
                     </rect>
                 </property>
@@ -45,7 +45,7 @@
                     <rect>
                         <x>20</x>
                         <y>140</y>
-                        <width>100</width>
+                        <width>150</width>
                         <height>50</height>
                     </rect>
                 </property>
@@ -58,7 +58,7 @@
                     <rect>
                         <x>20</x>
                         <y>200</y>
-                        <width>100</width>
+                        <width>150</width>
                         <height>50</height>
                     </rect>
                 </property>
@@ -71,7 +71,7 @@
                     <rect>
                         <x>20</x>
                         <y>260</y>
-                        <width>100</width>
+                        <width>150</width>
                         <height>50</height>
                     </rect>
                 </property>
@@ -82,23 +82,58 @@
             <widget class="QLabel" name="imageLabel">
                 <property name="geometry">
                     <rect>
-                        <x>150</x>
+                        <x>200</x>
                         <y>20</y>
-                        <width>600</width>
-                        <height>400</height>
+                        <width>300</width>
+                        <height>300</height>
                     </rect>
                 </property>
                 <property name="text">
                     <string/>
                 </property>
+                <property name="scaledContents">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLabel" name="binaryImageLabel">
+                <property name="geometry">
+                    <rect>
+                        <x>520</x>
+                        <y>20</y>
+                        <width>300</width>
+                        <height>300</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Binary Image</string>
+                </property>
+                <property name="scaledContents">
+                    <bool>true</bool>
+                </property>
+            </widget>
+            <widget class="QLabel" name="decompressedImageLabel">
+                <property name="geometry">
+                    <rect>
+                        <x>740</x>
+                        <y>20</y>
+                        <width>300</width>
+                        <height>300</height>
+                    </rect>
+                </property>
+                <property name="text">
+                    <string>Decompressed Image</string>
+                </property>
+                <property name="scaledContents">
+                    <bool>true</bool>
+                </property>
             </widget>
             <widget class="QTextEdit" name="outputTextEdit">
                 <property name="geometry">
                     <rect>
-                        <x>150</x>
-                        <y>440</y>
-                        <width>600</width>
-                        <height>100</height>
+                        <x>200</x>
+                        <y>340</y>
+                        <width>840</width>
+                        <height>400</height>
                     </rect>
                 </property>
             </widget>

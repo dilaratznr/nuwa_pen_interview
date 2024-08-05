@@ -1188,4 +1188,11 @@ CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.o: \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/video/background_segm.hpp \
   /Users/dilaratuzuner/Desktop/NUWA_PEN/include/Compressor.h \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QLabel \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qlabel.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qframe.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpicture.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiodevice.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtextdocument.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qurl.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtmochelpers.h
