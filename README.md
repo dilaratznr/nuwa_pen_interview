@@ -50,11 +50,6 @@ This project binarizes and compresses images using OpenCV. It converts grayscale
     ./NUWA_PEN <path_to_image>
     ```
 
-   Example:
-    ```sh
-    ./NUWA_PEN ../images/Assignment1_1.jpg
-    ```
-
 ## File Descriptions
 
 - **ImageProcessor.h / .cpp**: Handles image binarization and MSE calculation.
