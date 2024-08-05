@@ -1,6 +1,7 @@
-Image Binarization and Compression
 
-Overview
+# Image Binarization and Compression
+
+## Overview
 
 This project binarizes and compresses images using OpenCV. It converts grayscale images to binary and compresses them to reduce file size. The codec can also decompress images and calculate the Mean Squared Error (MSE) between original and decompressed images.
 
@@ -23,6 +24,7 @@ This project binarizes and compresses images using OpenCV. It converts grayscale
 
 - **C++ Compiler** (e.g., g++, clang)
 - **OpenCV**
+- **CMake**
 
 ### Compilation
 
@@ -33,21 +35,24 @@ This project binarizes and compresses images using OpenCV. It converts grayscale
     git checkout binarization_and_compression
     ```
 
-2. **Compile**:
+2. **Build with CMake**:
     ```sh
-    g++ -o image_processor main.cpp ImageProcessor.cpp Compressor.cpp -lopencv_core -lopencv_imgcodecs -lopencv_imgproc
+    mkdir build
+    cd build
+    cmake ..
+    make
     ```
 
 ### Running the Program
 
 1. **Execute**:
     ```sh
-    ./image_processor <path_to_image>
+    ./NUWA_PEN <path_to_image>
     ```
 
    Example:
     ```sh
-    ./image_processor images/Assignment1_1.jpg
+    ./NUWA_PEN ../images/Assignment1_1.jpg
     ```
 
 ## File Descriptions
@@ -55,5 +60,5 @@ This project binarizes and compresses images using OpenCV. It converts grayscale
 - **ImageProcessor.h / .cpp**: Handles image binarization and MSE calculation.
 - **Compressor.h / .cpp**: Manages image compression and decompression.
 - **main.cpp**: Main executable logic.
-
+- **mainwindow.h / .cpp / .ui**: GUI components (if applicable).
 
