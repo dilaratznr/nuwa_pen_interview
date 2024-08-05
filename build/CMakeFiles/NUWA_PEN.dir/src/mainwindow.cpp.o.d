@@ -1058,6 +1058,13 @@ CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o: \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qcursor.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qbitmap.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtabwidget.h \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QLabel \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qlabel.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qframe.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpicture.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiodevice.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtextdocument.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qurl.h \
   /Users/dilaratuzuner/Desktop/NUWA_PEN/include/ImageProcessor.h \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/opencv.hpp \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/opencv_modules.hpp \
@@ -1188,13 +1195,6 @@ CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o: \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/video/background_segm.hpp \
   /Users/dilaratuzuner/Desktop/NUWA_PEN/include/Compressor.h \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QLabel \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qlabel.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qframe.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpicture.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiodevice.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtextdocument.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qurl.h \
   /Users/dilaratuzuner/Desktop/NUWA_PEN/build/ui_mainwindow.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/QVariant \
   /usr/local/Cellar/qt/6.7.0_1/lib/QtCore.framework/Headers/qvariant.h \
@@ -1257,4 +1257,6 @@ CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o: \
   /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qdialogbuttonbox.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/fstream \
   /usr/local/Cellar/qt/6.7.0_1/lib/QtGui.framework/Headers/QPixmap \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtGui.framework/Headers/qpixmap.h
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtGui.framework/Headers/qpixmap.h \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtCore.framework/Headers/QDir \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtCore.framework/Headers/qdir.h
