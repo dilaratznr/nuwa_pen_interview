@@ -1,0 +1,3 @@
+/Users/dilaratuzuner/Desktop/NUWA_PEN/cmake-build-debug/CMakeFiles/NUWA_PEN.dir
+/Users/dilaratuzuner/Desktop/NUWA_PEN/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/dilaratuzuner/Desktop/NUWA_PEN/cmake-build-debug/CMakeFiles/rebuild_cache.dir
