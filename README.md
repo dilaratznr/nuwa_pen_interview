@@ -62,3 +62,9 @@ This project binarizes and compresses images using OpenCV. It converts grayscale
 - **main.cpp**: Main executable logic.
 - **mainwindow.h / .cpp / .ui**: GUI components (if applicable).
 
+## Output
+<img width="1277" alt="Ekran Resmi 2024-08-05 13 28 21" src="https://github.com/user-attachments/assets/c69dd7e2-4c18-44df-a6f0-b2985cb847fd">
+
+<img width="1277" alt="Ekran Resmi 2024-08-05 13 28 53" src="https://github.com/user-attachments/assets/ceb67b52-a5fa-4f44-94c4-699d7c362fd6">
+
+
