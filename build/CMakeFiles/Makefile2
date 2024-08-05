@@ -81,12 +81,12 @@ clean: CMakeFiles/NUWA_PEN.dir/clean
 CMakeFiles/NUWA_PEN.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NUWA_PEN.dir/build.make CMakeFiles/NUWA_PEN.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NUWA_PEN.dir/build.make CMakeFiles/NUWA_PEN.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=1,2,3,4 "Built target NUWA_PEN"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8 "Built target NUWA_PEN"
 .PHONY : CMakeFiles/NUWA_PEN.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/NUWA_PEN.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles 8
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/NUWA_PEN.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/dilaratuzuner/Desktop/NUWA_PEN/build/CMakeFiles 0
 .PHONY : CMakeFiles/NUWA_PEN.dir/rule

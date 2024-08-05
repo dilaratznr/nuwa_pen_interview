@@ -1,7 +1,8 @@
-CMakeFiles/NUWA_PEN.dir/src/main.cpp.o: \
-  /Users/dilaratuzuner/Desktop/NUWA_PEN/src/main.cpp \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QApplication \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qapplication.h \
+CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o: \
+  /Users/dilaratuzuner/Desktop/NUWA_PEN/src/mainwindow.cpp \
+  /Users/dilaratuzuner/Desktop/NUWA_PEN/include/mainwindow.h \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QMainWindow \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qmainwindow.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtwidgetsglobal.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtguiglobal.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qglobal.h \
@@ -539,7 +540,14 @@ CMakeFiles/NUWA_PEN.dir/src/main.cpp.o: \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtguiexports.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtwidgets-config.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtwidgetsexports.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcoreapplication.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qwidget.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qwindowdefs.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobjectdefs.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qnamespace.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtmetamacros.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobjectdefs_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qfunctionaltools_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobject.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstring.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qchar.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/functional \
@@ -933,8 +941,6 @@ CMakeFiles/NUWA_PEN.dir/src/main.cpp.o: \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringview.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbytearray.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qrefcount.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qnamespace.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtmetamacros.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qarraydata.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qpair.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qarraydatapointer.h \
@@ -956,12 +962,44 @@ CMakeFiles/NUWA_PEN.dir/src/main.cpp.o: \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringbuilder.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringconverter.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringconverter_base.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcoreevent.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobjectdefs.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobjectdefs_impl.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qfunctionaltools_impl.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdeadlinetimer.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qelapsedtimer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qlist.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qhashfunctions.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/numeric \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/accumulate.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/gcd_lcm.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/inclusive_scan.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/inner_product.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/iota.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/midpoint.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/partial_sum.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/pstl_reduce.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiterator.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbytearraylist.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringlist.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qalgorithms.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringmatcher.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qscopedpointer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmetatype.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcompare.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcomparehelpers.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdatastream.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiodevicebase.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qfloat16.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmath.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiterable.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmetacontainer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcontainerinfo.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtaggedpointer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qscopeguard.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/list \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/map \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__tree \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobject_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbindingstorage.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/chrono \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/calendar.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/convert_to_tm.h \
@@ -979,90 +1017,37 @@ CMakeFiles/NUWA_PEN.dir/src/main.cpp.o: \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/year_month_day.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/year_month_weekday.h \
   /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__chrono/literals.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmetatype.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcompare.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcomparehelpers.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdatastream.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qscopedpointer.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiodevicebase.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qfloat16.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qhashfunctions.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/numeric \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/accumulate.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/adjacent_difference.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/exclusive_scan.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/gcd_lcm.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/inclusive_scan.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/inner_product.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/iota.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/midpoint.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/partial_sum.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/pstl_reduce.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/transform_exclusive_scan.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__numeric/transform_inclusive_scan.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmath.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qalgorithms.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiterable.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmetacontainer.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcontainerinfo.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtaggedpointer.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qscopeguard.h \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/list \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/map \
-  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__tree \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qeventloop.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobject.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qlist.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiterator.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbytearraylist.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringlist.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qstringmatcher.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qobject_impl.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qbindingstorage.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qnativeinterface.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdebug.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtextstream.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcontiguouscache.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsharedpointer.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qshareddata.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsharedpointer_impl.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmap.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qshareddata_impl.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qset.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qhash.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qvarlengtharray.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcoreapplication_platform.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qwindowdefs.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qpoint.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/q23utility.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsize.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmargins.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qcursor.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qbitmap.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/q23utility.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qaction.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qkeysequence.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qicon.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsize.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpixmap.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpaintdevice.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qrect.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qpoint.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qcolor.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qrgb.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qrgba64.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qshareddata.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qimage.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpixelformat.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtransform.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpolygon.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qregion.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qline.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qguiapplication.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qinputmethod.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qlocale.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qvariant.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qguiapplication_platform.h \
-  /Users/dilaratuzuner/Desktop/NUWA_PEN/include/mainwindow.h \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QMainWindow \
-  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qmainwindow.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qwidget.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qaction.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qkeysequence.h \
-  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qicon.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdebug.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtextstream.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcontiguouscache.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsharedpointer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qsharedpointer_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qmap.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qshareddata_impl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qset.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qhash.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qvarlengtharray.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpalette.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qbrush.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qfont.h \
@@ -1070,6 +1055,8 @@ CMakeFiles/NUWA_PEN.dir/src/main.cpp.o: \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qfontmetrics.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qfontinfo.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qsizepolicy.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qcursor.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qbitmap.h \
   /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qtabwidget.h \
   /Users/dilaratuzuner/Desktop/NUWA_PEN/include/ImageProcessor.h \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/opencv.hpp \
@@ -1200,4 +1187,73 @@ CMakeFiles/NUWA_PEN.dir/src/main.cpp.o: \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/video.hpp \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/video/tracking.hpp \
   /usr/local/Cellar/opencv/4.10.0_2/include/opencv4/opencv2/video/background_segm.hpp \
-  /Users/dilaratuzuner/Desktop/NUWA_PEN/include/Compressor.h
+  /Users/dilaratuzuner/Desktop/NUWA_PEN/include/Compressor.h \
+  /Users/dilaratuzuner/Desktop/NUWA_PEN/build/ui_mainwindow.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/QVariant \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtCore.framework/Headers/qvariant.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/QApplication \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qapplication.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcoreapplication.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcoreevent.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdeadlinetimer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qelapsedtimer.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qeventloop.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qnativeinterface.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcoreapplication_platform.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qguiapplication.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qinputmethod.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qlocale.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qguiapplication_platform.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/QLabel \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qlabel.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qframe.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpicture.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qiodevice.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtextdocument.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qurl.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/QMainWindow \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/QPushButton \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qpushbutton.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qabstractbutton.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/QTextEdit \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qtextedit.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qabstractscrollarea.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtextoption.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtextcursor.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qtextformat.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtGui/qpen.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/QWidget \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qwidget.h \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QFileDialog \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qfiledialog.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdir.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qfile.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qfiledevice.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/filesystem \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/copy_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_entry.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_status.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_type.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/perms.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/file_time_type.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/filesystem_error.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/path.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/operations.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/perm_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/space_info.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/directory_options.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/path_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/recursive_directory_iterator.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/__filesystem/u8path.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qfileinfo.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qdatetime.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qcalendar.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtCore/qtimezone.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qdialog.h \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/QMessageBox \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtWidgets.framework/Headers/qmessagebox.h \
+  /usr/local/Cellar/qt/6.7.0_1/include/QtWidgets/qdialogbuttonbox.h \
+  /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/include/c++/v1/fstream \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtGui.framework/Headers/QPixmap \
+  /usr/local/Cellar/qt/6.7.0_1/lib/QtGui.framework/Headers/qpixmap.h

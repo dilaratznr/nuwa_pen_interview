@@ -1,0 +1,4 @@
+-I/Users/dilaratuzuner/Desktop/NUWA_PEN/include
+-o
+/Users/dilaratuzuner/Desktop/NUWA_PEN/cmake-build-debug/src/moc_mainwindow.cpp
+/Users/dilaratuzuner/Desktop/NUWA_PEN/src/mainwindow.h

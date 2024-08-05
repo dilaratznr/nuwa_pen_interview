@@ -8,9 +8,11 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/Users/dilaratuzuner/Desktop/NUWA_PEN/build/include/moc_mainwindow.cpp" "CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.o" "gcc" "CMakeFiles/NUWA_PEN.dir/include/moc_mainwindow.cpp.o.d"
   "/Users/dilaratuzuner/Desktop/NUWA_PEN/src/Compressor.cpp" "CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.o" "gcc" "CMakeFiles/NUWA_PEN.dir/src/Compressor.cpp.o.d"
   "/Users/dilaratuzuner/Desktop/NUWA_PEN/src/ImageProcessor.cpp" "CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.o" "gcc" "CMakeFiles/NUWA_PEN.dir/src/ImageProcessor.cpp.o.d"
   "/Users/dilaratuzuner/Desktop/NUWA_PEN/src/main.cpp" "CMakeFiles/NUWA_PEN.dir/src/main.cpp.o" "gcc" "CMakeFiles/NUWA_PEN.dir/src/main.cpp.o.d"
+  "/Users/dilaratuzuner/Desktop/NUWA_PEN/src/mainwindow.cpp" "CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o" "gcc" "CMakeFiles/NUWA_PEN.dir/src/mainwindow.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.
