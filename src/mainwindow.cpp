@@ -4,7 +4,8 @@
 #include <QMessageBox>
 #include <chrono>
 #include <fstream>
-#include <QPixmap>
+#include <QDir>
+#include <QDebug>
 
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -16,6 +17,10 @@ MainWindow::MainWindow(QWidget *parent)
     connect(ui->selectImageButton3, &QPushButton::clicked, this, &MainWindow::on_selectImageButton3_clicked);
     connect(ui->selectImageButton4, &QPushButton::clicked, this, &MainWindow::on_selectImageButton4_clicked);
     connect(ui->processButton, &QPushButton::clicked, this, &MainWindow::on_processButton_clicked);
+
+    // Çalışma dizinini ayarlayın
+    QDir::setCurrent("/Users/dilaratuzuner/Desktop/NUWA_PEN/");
+    qDebug() << "Current working directory: " << QDir::currentPath();
 }
 
 MainWindow::~MainWindow()
@@ -23,55 +28,74 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::loadImage(const QString &filePath)
+void MainWindow::loadImage(const QString &filePath, QLabel *label)
 {
     QPixmap pixmap(filePath);
-    ui->imageLabel->setPixmap(pixmap.scaled(ui->imageLabel->size(), Qt::KeepAspectRatio));
-    selectedFilePath = filePath;
+    if (pixmap.isNull()) {
+        qDebug() << "Failed to load image: " << filePath;
+    }
+    label->setPixmap(pixmap);
 }
 
-void MainWindow::displayImage(const QString &filePath, QLabel *label)
+void MainWindow::clearResults()
 {
-    QPixmap pixmap(filePath);
-    label->setPixmap(pixmap.scaled(label->size(), Qt::KeepAspectRatio));
+    ui->binaryImageLabel->clear();
+    ui->decompressedImageLabel->clear();
+    ui->outputTextEdit->clear();
 }
 
 void MainWindow::on_selectImageButton1_clicked()
 {
-    loadImage("../images/Assignment1_1.jpg");
+    selectedImagePath = "images/Assignment1_1.jpg";
+    loadImage(selectedImagePath, ui->originalImageLabel);
+    clearResults(); // Eski sonuçları temizle
 }
 
 void MainWindow::on_selectImageButton2_clicked()
 {
-    loadImage("../images/Assignment1_2.jpg");
+    selectedImagePath = "images/Assignment1_2.jpg";
+    loadImage(selectedImagePath, ui->originalImageLabel);
+    clearResults(); // Eski sonuçları temizle
 }
 
 void MainWindow::on_selectImageButton3_clicked()
 {
-    loadImage("../images/Assignment1_3.jpg");
+    selectedImagePath = "images/Assignment1_3.jpg";
+    loadImage(selectedImagePath, ui->originalImageLabel);
+    clearResults(); // Eski sonuçları temizle
 }
 
 void MainWindow::on_selectImageButton4_clicked()
 {
-    loadImage("../images/Assignment1_4.jpg");
+    selectedImagePath = "images/Assignment1_4.jpg";
+    loadImage(selectedImagePath, ui->originalImageLabel);
+    clearResults(); // Eski sonuçları temizle
 }
 
 void MainWindow::on_processButton_clicked()
 {
-    if (selectedFilePath.isEmpty()) {
-        QMessageBox::warning(this, "Warning", "Please select a file first.");
+    if (selectedImagePath.isEmpty()) {
+        QMessageBox::warning(this, "Warning", "Please select an image first.");
         return;
     }
+    processImage();
+}
 
-    cv::Mat image = cv::imread(selectedFilePath.toStdString());
+void MainWindow::processImage()
+{
+    ui->loadingLabel->setVisible(true);
+    QCoreApplication::processEvents();
+
+    cv::Mat image = cv::imread(selectedImagePath.toStdString());
 
     if (image.empty()) {
         QMessageBox::critical(this, "Error", "Could not open or find the image.");
+        ui->loadingLabel->setVisible(false);
         return;
     }
 
     auto start = std::chrono::high_resolution_clock::now();
-    cv::Mat binaryImage = processor.binarize(image);
+    cv::Mat binaryImage = imageProcessor.binarize(image);
     auto end = std::chrono::high_resolution_clock::now();
     std::chrono::duration<double> duration = end - start;
     ui->outputTextEdit->append("Binarization time: " + QString::number(duration.count()) + " seconds");
@@ -82,13 +106,8 @@ void MainWindow::on_processButton_clicked()
     duration = end - start;
     ui->outputTextEdit->append("Compression time: " + QString::number(duration.count()) + " seconds");
 
-    QString outputDir = "../outputs";
-    if (!QDir(outputDir).exists()) {
-        QDir().mkdir(outputDir);
-    }
-
-    std::string compressedFilePath = (outputDir + "/compressed.bin").toStdString();
-    std::ofstream outFile(compressedFilePath, std::ios::binary);
+    QString compressedFilePath = "outputs/compressed.bin";
+    std::ofstream outFile(compressedFilePath.toStdString(), std::ios::binary);
     outFile.write(reinterpret_cast<const char*>(compressedData.data()), compressedData.size());
     outFile.close();
 
@@ -98,15 +117,21 @@ void MainWindow::on_processButton_clicked()
     duration = end - start;
     ui->outputTextEdit->append("Decompression time: " + QString::number(duration.count()) + " seconds");
 
-    QString binaryImagePath = outputDir + "/binary_image.png";
-    QString decompressedImagePath = outputDir + "/decompressed_image.png";
+    QString binaryImagePath = "outputs/binary_image.png";
+    QString decompressedImagePath = "outputs/decompressed_image.png";
     cv::imwrite(binaryImagePath.toStdString(), binaryImage);
     cv::imwrite(decompressedImagePath.toStdString(), decompressedImage);
 
-    double mse = cv::norm(binaryImage, decompressedImage, cv::NORM_L2);
-    mse = mse * mse / (binaryImage.total());
+    // Mean Squared Error Hesaplama
+    cv::Mat diff;
+    cv::absdiff(binaryImage, decompressedImage, diff);
+    diff.convertTo(diff, CV_32F);
+    diff = diff.mul(diff);
+    double mse = cv::sum(diff)[0] / (binaryImage.total());
     ui->outputTextEdit->append("Mean Squared Error: " + QString::number(mse));
 
-    displayImage(binaryImagePath, ui->binaryImageLabel);
-    displayImage(decompressedImagePath, ui->decompressedImageLabel);
+    loadImage(binaryImagePath, ui->binaryImageLabel);
+    loadImage(decompressedImagePath, ui->decompressedImageLabel);
+
+    ui->loadingLabel->setVisible(false);
 }

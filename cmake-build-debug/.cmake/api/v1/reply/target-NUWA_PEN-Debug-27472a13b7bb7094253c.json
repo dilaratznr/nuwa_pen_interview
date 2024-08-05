@@ -44,7 +44,13 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 33,
+				"line" : 28,
+				"parent" : 0
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 31,
 				"parent" : 0
 			},
 			{
@@ -54,15 +60,9 @@
 				"parent" : 0
 			},
 			{
-				"command" : 1,
-				"file" : 0,
-				"line" : 43,
-				"parent" : 0
-			},
-			{
 				"command" : 4,
 				"file" : 0,
-				"line" : 26,
+				"line" : 11,
 				"parent" : 0
 			},
 			{
@@ -222,7 +222,7 @@
 			{
 				"command" : 8,
 				"file" : 0,
-				"line" : 42,
+				"line" : 36,
 				"parent" : 0
 			}
 		]
@@ -278,6 +278,10 @@
 				{
 					"backtrace" : 33,
 					"path" : "/Users/dilaratuzuner/Desktop/NUWA_PEN/include"
+				},
+				{
+					"backtrace" : 33,
+					"path" : "/Users/dilaratuzuner/Desktop/NUWA_PEN/cmake-build-debug"
 				},
 				{
 					"backtrace" : 34,
@@ -756,7 +760,7 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/src/moc_mainwindow.cpp",
+			"path" : "cmake-build-debug/include/moc_mainwindow.cpp",
 			"sourceGroupIndex" : 0
 		},
 		{
@@ -768,7 +772,7 @@
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "cmake-build-debug/src/moc_mainwindow.cpp.rule",
+			"path" : "cmake-build-debug/include/moc_mainwindow.cpp.rule",
 			"sourceGroupIndex" : 2
 		},
 		{

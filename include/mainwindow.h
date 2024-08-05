@@ -2,9 +2,13 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
-#include "ImageProcessor.h"
+#include <QLabel>
+#include <QString>
+#include <QPushButton>
+#include <opencv2/opencv.hpp>
+#include <vector>
 #include "Compressor.h"
-#include <QLabel> // Bu satırı ekleyin
+#include "ImageProcessor.h"
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -24,15 +28,16 @@ public:
     void on_selectImageButton3_clicked();
     void on_selectImageButton4_clicked();
     void on_processButton_clicked();
+    void clearResults();
 
 private:
     Ui::MainWindow *ui;
-    QString selectedFilePath;
-    ImageProcessor processor;
     Compressor compressor;
+    ImageProcessor imageProcessor;
+    QString selectedImagePath;
 
-    void loadImage(const QString &filePath);
-    void displayImage(const QString &filePath, QLabel *label);
+    void loadImage(const QString &filePath, QLabel *label);
+    void processImage();
 };
 
 #endif // MAINWINDOW_H
